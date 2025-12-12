@@ -1,0 +1,677 @@
+[00:00:00.912] Server  LOG      ✓ Ready in 635ms
+[00:00:07.631] Server  LOG      ○ Compiling / ...
+[00:03:43.749] Browser ERROR   ./app/page.tsx:3:11
+Parsing ecmascript source code failed
+  1 | export default function Square() {
+  2 |   return <button className="square">X</button>
+> 3 |   <button className="square"></button>
+    |           ^^^^^^^^^
+  4 |
+  5 | }
+  6 |
+
+Expected ';', got 'className'
+[00:03:55.748] Browser ERROR   ./app/page.tsx:3:11
+Parsing ecmascript source code failed
+  1 | export default function Square() {
+  2 |   return <button className="square">X</button>
+> 3 |   <button className="square">x</button>
+    |           ^^^^^^^^^
+  4 |
+  5 | }
+  6 |
+
+Expected ';', got 'className'
+[00:04:17.763] Browser ERROR   ./app/page.tsx:3:11
+Parsing ecmascript source code failed
+  1 | export default function Square() {
+  2 |   return (<button className="square">X</button>
+> 3 |   <button className="square">x</button>
+    |           ^^^^^^^^^
+  4 |   )
+  5 | }
+  6 |
+
+Expected ',', got 'className'
+[00:04:28.269] Server  LOG      ✓ Compiled in 34ms
+[00:04:32.753] Browser ERROR   ./app/page.tsx:3:11
+Parsing ecmascript source code failed
+  1 | export default function Square() {
+  2 |   return (<button className="square">X</button>
+> 3 |   <button className="square">x</button>
+    |           ^^^^^^^^^
+  4 |   )
+  5 | }
+  6 |
+
+Expected ',', got 'className'
+[00:09:50.472] Server  LOG      ✓ Compiled in 85ms
+[00:11:44.217] Server  LOG      ✓ Compiled in 13ms
+[00:21:40.742] Browser ERROR   ./components/square.tsx:5:11
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |           ^^^^^^^^^^^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:40.742] Browser ERROR   ./components/square.tsx:5:22
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |                      ^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:40.742] Browser ERROR   ./components/square.tsx:8:3
+Parsing ecmascript source code failed
+   6 |         console.log('clicked!')
+   7 |     }
+>  8 |   return (
+     |   ^^^^^^^^
+>  9 |     <>
+     | ^^^^^^
+> 10 |       <button className="square">{value}</button>
+     | ^^^^^^
+> 11 |     </>
+     | ^^^^^^
+> 12 |   );
+     | ^^^^^
+  13 | }
+  14 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:51.759] Browser ERROR   ./components/square.tsx:5:11
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |           ^^^^^^^^^^^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:51.759] Browser ERROR   ./components/square.tsx:5:22
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |                      ^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:51.759] Browser ERROR   ./components/square.tsx:8:3
+Parsing ecmascript source code failed
+   6 |         console.log('clicked!')
+   7 |     }
+>  8 |   return (
+     |   ^^^^^^^^
+>  9 |     <>
+     | ^^^^^^
+> 10 |       <button className="square" onClick={handleClick}>{value}</button>
+     | ^^^^^^
+> 11 |     </>
+     | ^^^^^^
+> 12 |   );
+     | ^^^^^
+  13 | }
+  14 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:53.742] Browser ERROR   ./components/square.tsx:5:11
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |           ^^^^^^^^^^^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:53.742] Browser ERROR   ./components/square.tsx:5:22
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |                      ^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:53.742] Browser ERROR   ./components/square.tsx:8:3
+Parsing ecmascript source code failed
+   6 |         console.log('clicked!')
+   7 |     }
+>  8 |   return (
+     |   ^^^^^^^^
+>  9 |     <>
+     | ^^^^^^
+> 10 |       <button className="square" onClick={handleClick()}>{value}</button>
+     | ^^^^^^
+> 11 |     </>
+     | ^^^^^^
+> 12 |   );
+     | ^^^^^
+  13 | }
+  14 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:59.751] Browser ERROR   ./components/square.tsx:5:11
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |           ^^^^^^^^^^^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:59.751] Browser ERROR   ./components/square.tsx:5:22
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |                      ^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:59.751] Browser ERROR   ./components/square.tsx:8:3
+Parsing ecmascript source code failed
+   6 |         console.log('clicked!')
+   7 |     }
+>  8 |   return (
+     |   ^^^^^^^^
+>  9 |     <>
+     | ^^^^^^
+> 10 |       <button className="square" onClick={handleClicl}>{value}</button>
+     | ^^^^^^
+> 11 |     </>
+     | ^^^^^^
+> 12 |   );
+     | ^^^^^
+  13 | }
+  14 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:22:02.754] Browser ERROR   ./components/square.tsx:5:11
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |           ^^^^^^^^^^^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:22:02.754] Browser ERROR   ./components/square.tsx:5:22
+Parsing ecmascript source code failed
+  3 | export default function Square({ value }) {
+  4 |
+> 5 |     const handleClick(){
+    |                      ^
+  6 |         console.log('clicked!')
+  7 |     }
+  8 |   return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:22:02.754] Browser ERROR   ./components/square.tsx:8:3
+Parsing ecmascript source code failed
+   6 |         console.log('clicked!')
+   7 |     }
+>  8 |   return (
+     |   ^^^^^^^^
+>  9 |     <>
+     | ^^^^^^
+> 10 |       <button className="square" onClick={handleClick}>{value}</button>
+     | ^^^^^^
+> 11 |     </>
+     | ^^^^^^
+> 12 |   );
+     | ^^^^^
+  13 | }
+  14 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:22:14.182] Server  LOG      ✓ Compiled in 15ms
+[00:22:14.365] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.370] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.371] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.372] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.374] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.375] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.377] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.379] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.383] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.385] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.388] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.389] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.392] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.394] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.398] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.400] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.403] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:14.404] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:14.756] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.645] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.646] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.648] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.649] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.650] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.652] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.655] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.655] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.657] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.657] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.659] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.660] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.663] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.664] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.668] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.669] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:24.671] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:22:24.674] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:27.537] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:22:57.708] Server  LOG     clicked!
+[00:22:57.709] Server  LOG     clicked!
+[00:22:57.709] Server  LOG     clicked!
+[00:22:57.710] Server  LOG     clicked!
+[00:22:57.710] Server  LOG     clicked!
+[00:22:57.711] Server  LOG     clicked!
+[00:22:57.711] Server  LOG     clicked!
+[00:22:57.711] Server  LOG     clicked!
+[00:22:57.712] Server  LOG     clicked!
+[00:23:07.751] Browser ERROR   ./components/square.tsx:10:61
+Parsing ecmascript source code failed
+   8 |   return (
+   9 |     <>
+> 10 |       <button className="square" onClick={()=>handleClick()</>}>
+     |                                                             ^^^^
+  11 |         {value}
+  12 |       </button>
+  13 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:23:26.515] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.516] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.519] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.520] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.523] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.524] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.528] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.529] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.537] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.539] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.542] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.543] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.545] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.549] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.551] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.551] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:26.553] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:26.554] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:27.757] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.580] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.582] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.583] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.584] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.585] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.585] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.587] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.589] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.590] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.591] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.593] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.596] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.598] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.599] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.601] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.603] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:31.606] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:31.609] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:23:32.018] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:24:56.811] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.813] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.813] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.814] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.814] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.815] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.815] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.816] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.817] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.818] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.818] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.819] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.819] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.819] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.820] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.820] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:56.820] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:56.820] Server  ERROR    ⨯ ReferenceError: value is not defined
+[00:24:59.183] Browser ERROR   uncaughtError: ReferenceError: value is not defined
+[00:25:38.386] Server  LOG      ✓ Compiled in 4ms
+[00:25:38.489] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.491] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.499] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.501] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.505] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.507] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.512] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.516] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.520] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.523] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.527] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.529] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.533] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.535] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.540] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.543] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:38.547] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:38.548] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:40.743] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.563] Server  LOG      ✓ Compiled in 3ms
+[00:25:51.700] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.701] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.703] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.704] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.705] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.706] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.707] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.708] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.710] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.710] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.716] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.719] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.721] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.723] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.726] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.728] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:51.733] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:51.737] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:25:53.742] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button className="square" onClick={function handleClick} children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:26:35.440] Server  LOG      ✓ Compiled in 6ms
+[00:26:54.649] Browser LOG     clicked!
+[00:26:55.374] Browser LOG     clicked!
+[00:26:55.831] Browser LOG     clicked!
+[00:27:00.080] Browser LOG     clicked!
+[00:27:00.857] Browser LOG     clicked!
+[00:27:03.885] Browser LOG     clicked!
+[00:27:04.711] Browser LOG     clicked!
+[00:27:05.360] Browser LOG     clicked!
+[00:27:05.541] Browser LOG     clicked!
+[00:27:05.707] Browser LOG     clicked!
+[00:27:05.847] Browser LOG     clicked!

@@ -1,61 +1,609 @@
-[00:00:00.912] Server  LOG      ✓ Ready in 635ms
-[00:00:07.631] Server  LOG      ○ Compiling / ...
-[00:03:43.749] Browser ERROR   ./app/page.tsx:3:11
+[00:00:01.469] Server  LOG      ✓ Ready in 996ms
+[00:06:27.285] Server  LOG      ✓ Compiled in 16ms
+[00:08:11.661] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__a7cff937._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:11.664] Server  ERROR    ⨯ ReferenceError: squares is not defined
+[00:08:12.775] Browser ERROR   uncaughtError: ReferenceError: squares is not defined
+[00:08:31.771] Browser ERROR   ./app/page.tsx:4:9
 Parsing ecmascript source code failed
-  1 | export default function Square() {
-  2 |   return <button className="square">X</button>
-> 3 |   <button className="square"></button>
-    |           ^^^^^^^^^
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:08:51.633] Server  LOG      ✓ Compiled in 14ms
+[00:08:51.772] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:10:06.772] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:11:12.514] Server  LOG      ✓ Compiled in 19ms
+[00:11:12.622] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
   4 |
-  5 | }
+  5 | export default function Square(value) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     setValue("X");
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:11:12.622] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:12:39.066] Server  LOG      ✓ Compiled in 18ms
+[00:12:39.774] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     setValue("X");
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:12:39.774] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:13:04.392] Server  LOG      ✓ Compiled in 6ms
+[00:13:04.775] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     const nextSquares = squares.slice();
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:13:04.775] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:13:48.050] Server  LOG      ✓ Compiled in 16ms
+[00:13:48.772] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     const nextSquares = squares.slice();
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:13:48.772] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:14:15.451] Server  LOG      ✓ Compiled in 10ms
+[00:14:15.785] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     const nextSquares = squares.slice();
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:14:15.785] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:14:22.992] Server  LOG      ✓ Compiled in 16ms
+[00:14:23.773] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |
+  8 |   function handleClick() {
+  9 |     const nextSquares = squares.slice();
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:14:23.774] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:04.286] Server  LOG      ✓ Compiled in 12ms
+[00:15:04.778] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:04.778] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:15:27.770] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:27.770] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:15:37.728] Server  LOG      ✓ Compiled in 15ms
+[00:15:37.832] Browser ERROR   ./components/square.tsx:6:10
+Ecmascript file had an error
+  4 |
+  5 | export default function Square(value, onSquareClick) {
+> 6 |   const [value, setValue] = useState();
+    |          ^^^^^
+  7 |   //   const [squares, setSquares];
+  8 |
+  9 |   function handleClick() {
+
+the name `value` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:15:37.832] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:45.272] Server  LOG      ✓ Compiled in 56ms
+[00:15:45.373] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:50.521] Server  LOG      ✓ Compiled in 21ms
+[00:15:50.631] Browser ERROR   ./app/page.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function Board() {
+> 4 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  5 |   return (
+  6 |     <>
+  7 |       <div className="board-row">
+
+'const' declarations must be initialized
+[00:15:50.631] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:16:30.772] Browser ERROR   ./app/page.tsx:8:11
+Parsing ecmascript source code failed
+   6 |   function Square(value, onSquareClick) {
+   7 |     const [value, setValue] = useState();
+>  8 |     const [squares, setSquares];
+     |           ^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 |     function handleClick() {
+  11 |       const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+[00:16:30.772] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:17:14.771] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:17:17.783] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick() {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:17:40.779] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:18:13.791] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:18:23.777] Browser ERROR   ./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | import Square from "@/components/square";
+> 2 | import { useState } from "react";
+    |          ^^^^^^^^
+  3 |
+  4 | export default function Board() {
+  5 |   const [squares, setSquares] = useState(Array(9).fill(null));
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:18:23.777] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:18:26.776] Browser ERROR   ./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | import Square from "@/components/square";
+> 2 | import { useState } from "react";
+    |          ^^^^^^^^
+  3 |
+  4 | export default function Board() {
+  5 |   const [squares, setSquares] = useState(Array(9).fill(null));
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:18:26.776] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:18:32.775] Browser ERROR   ./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | import Square from "@/components/square";
+> 2 | import { useState } from "react";
+    |          ^^^^^^^^
+  3 |
+  4 | export default function Board() {
+  5 |   const [squares, setSquares] = useState(Array(9).fill(null));
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:18:32.775] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:19:52.771] Browser ERROR   ./app/page.tsx:15:50
+Parsing ecmascript source code failed
+  13 |     <>
+  14 |       <div className="board-row">
+> 15 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  16 |         <Square value={squares[1]} />
+  17 |         <Square value={squares[2]} />
+  18 |       </div>
+
+Expected '</', got '('
+[00:19:52.771] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:20:19.770] Browser ERROR   ./app/page.tsx:6:9
+Parsing ecmascript source code failed
+  4 | function Square(value, onSquareClick) {
+  5 |   const [value, setValue] = useState();
+> 6 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 |   
+  9 |   return (
+
+'const' declarations must be initialized
+[00:20:19.770] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:20:49.769] Browser ERROR   ./app/page.tsx:5:9
+Parsing ecmascript source code failed
+  3 | function Square(value, onSquareClick) {
+  4 |   const [value, setValue] = useState();
+> 5 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
   6 |
+  7 |   
+  8 |   return (
 
-Expected ';', got 'className'
-[00:03:55.748] Browser ERROR   ./app/page.tsx:3:11
+'const' declarations must be initialized
+[00:20:49.770] Browser ERROR   ./components/square.tsx:7:9
 Parsing ecmascript source code failed
-  1 | export default function Square() {
-  2 |   return <button className="square">X</button>
-> 3 |   <button className="square">x</button>
-    |           ^^^^^^^^^
-  4 |
-  5 | }
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./components/square.tsx
+    ./app/page.tsx
+[00:21:21.783] Browser ERROR   ./app/page.tsx:5:9
+Parsing ecmascript source code failed
+  3 | function Square({value, onSquareClick}) {
+  4 |   const [value, setValue] = useState();
+> 5 |   const [squares, setSquares];
+    |         ^^^^^^^^^^^^^^^^^^^^^
   6 |
-
-Expected ';', got 'className'
-[00:04:17.763] Browser ERROR   ./app/page.tsx:3:11
-Parsing ecmascript source code failed
-  1 | export default function Square() {
-  2 |   return (<button className="square">X</button>
-> 3 |   <button className="square">x</button>
-    |           ^^^^^^^^^
-  4 |   )
-  5 | }
-  6 |
-
-Expected ',', got 'className'
-[00:04:28.269] Server  LOG      ✓ Compiled in 34ms
-[00:04:32.753] Browser ERROR   ./app/page.tsx:3:11
-Parsing ecmascript source code failed
-  1 | export default function Square() {
-  2 |   return (<button className="square">X</button>
-> 3 |   <button className="square">x</button>
-    |           ^^^^^^^^^
-  4 |   )
-  5 | }
-  6 |
-
-Expected ',', got 'className'
-[00:09:50.472] Server  LOG      ✓ Compiled in 85ms
-[00:11:44.217] Server  LOG      ✓ Compiled in 13ms
-[00:21:40.742] Browser ERROR   ./components/square.tsx:5:11
-Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |           ^^^^^^^^^^^
-  6 |         console.log('clicked!')
-  7 |     }
+  7 |   
   8 |   return (
+
+'const' declarations must be initialized
+[00:21:21.783] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
 
 'const' declarations must be initialized
 
@@ -63,54 +611,26 @@ Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:21:40.742] Browser ERROR   ./components/square.tsx:5:22
+[00:21:37.770] Browser ERROR   ./app/page.tsx:25:50
 Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |                      ^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+  23 |     <>
+  24 |       <div className="board-row">
+> 25 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  26 |         <Square value={squares[1]} />
+  27 |         <Square value={squares[2]} />
+  28 |       </div>
 
-Expected a semicolon
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:40.742] Browser ERROR   ./components/square.tsx:8:3
+Expected '</', got '('
+[00:21:37.770] Browser ERROR   ./components/square.tsx:7:9
 Parsing ecmascript source code failed
-   6 |         console.log('clicked!')
-   7 |     }
->  8 |   return (
-     |   ^^^^^^^^
->  9 |     <>
-     | ^^^^^^
-> 10 |       <button className="square">{value}</button>
-     | ^^^^^^
-> 11 |     </>
-     | ^^^^^^
-> 12 |   );
-     | ^^^^^
-  13 | }
-  14 |
-
-Return statement is not allowed here
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:51.759] Browser ERROR   ./components/square.tsx:5:11
-Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |           ^^^^^^^^^^^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
 
 'const' declarations must be initialized
 
@@ -118,54 +638,26 @@ Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:21:51.759] Browser ERROR   ./components/square.tsx:5:22
+[00:21:39.769] Browser ERROR   ./app/page.tsx:25:50
 Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |                      ^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+  23 |     <>
+  24 |       <div className="board-row">
+> 25 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  26 |         <Square value={squares[1]} />
+  27 |         <Square value={squares[2]} />
+  28 |       </div>
 
-Expected a semicolon
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:51.759] Browser ERROR   ./components/square.tsx:8:3
+Expected '</', got '('
+[00:21:39.769] Browser ERROR   ./components/square.tsx:7:9
 Parsing ecmascript source code failed
-   6 |         console.log('clicked!')
-   7 |     }
->  8 |   return (
-     |   ^^^^^^^^
->  9 |     <>
-     | ^^^^^^
-> 10 |       <button className="square" onClick={handleClick}>{value}</button>
-     | ^^^^^^
-> 11 |     </>
-     | ^^^^^^
-> 12 |   );
-     | ^^^^^
-  13 | }
-  14 |
-
-Return statement is not allowed here
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:53.742] Browser ERROR   ./components/square.tsx:5:11
-Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |           ^^^^^^^^^^^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
 
 'const' declarations must be initialized
 
@@ -173,54 +665,26 @@ Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:21:53.742] Browser ERROR   ./components/square.tsx:5:22
+[00:21:44.769] Browser ERROR   ./app/page.tsx:24:50
 Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |                      ^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+  22 |     <>
+  23 |       <div className="board-row">
+> 24 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  25 |         <Square value={squares[1]} />
+  26 |         <Square value={squares[2]} />
+  27 |       </div>
 
-Expected a semicolon
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:53.742] Browser ERROR   ./components/square.tsx:8:3
+Expected '</', got '('
+[00:21:44.769] Browser ERROR   ./components/square.tsx:7:9
 Parsing ecmascript source code failed
-   6 |         console.log('clicked!')
-   7 |     }
->  8 |   return (
-     |   ^^^^^^^^
->  9 |     <>
-     | ^^^^^^
-> 10 |       <button className="square" onClick={handleClick()}>{value}</button>
-     | ^^^^^^
-> 11 |     </>
-     | ^^^^^^
-> 12 |   );
-     | ^^^^^
-  13 | }
-  14 |
-
-Return statement is not allowed here
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:59.751] Browser ERROR   ./components/square.tsx:5:11
-Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |           ^^^^^^^^^^^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
 
 'const' declarations must be initialized
 
@@ -228,54 +692,26 @@ Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:21:59.751] Browser ERROR   ./components/square.tsx:5:22
+[00:22:01.770] Browser ERROR   ./app/page.tsx:24:50
 Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |                      ^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+  22 |     <>
+  23 |       <div className="board-row">
+> 24 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  25 |         <Square value={squares[1]} />
+  26 |         <Square value={squares[2]} />
+  27 |       </div>
 
-Expected a semicolon
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:21:59.751] Browser ERROR   ./components/square.tsx:8:3
+Expected '</', got '('
+[00:22:01.770] Browser ERROR   ./components/square.tsx:7:9
 Parsing ecmascript source code failed
-   6 |         console.log('clicked!')
-   7 |     }
->  8 |   return (
-     |   ^^^^^^^^
->  9 |     <>
-     | ^^^^^^
-> 10 |       <button className="square" onClick={handleClicl}>{value}</button>
-     | ^^^^^^
-> 11 |     </>
-     | ^^^^^^
-> 12 |   );
-     | ^^^^^
-  13 | }
-  14 |
-
-Return statement is not allowed here
-
-Import trace:
-  Server Component:
-    ./components/square.tsx
-    ./app/page.tsx
-[00:22:02.754] Browser ERROR   ./components/square.tsx:5:11
-Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |           ^^^^^^^^^^^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
 
 'const' declarations must be initialized
 
@@ -283,395 +719,1954 @@ Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:22:02.754] Browser ERROR   ./components/square.tsx:5:22
+[00:22:05.778] Browser ERROR   ./app/page.tsx:15:9
 Parsing ecmascript source code failed
-  3 | export default function Square({ value }) {
-  4 |
-> 5 |     const handleClick(){
-    |                      ^
-  6 |         console.log('clicked!')
-  7 |     }
-  8 |   return (
+  13 | export default function Board(sqaures) {
+  14 |   const [value, setValue] = useState();
+> 15 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+  16 |   const [squares, setSquares] = useState(Array(9).fill(null));
+  17 |   function handleClick(i) {
+  18 |     const nextSquares = squares.slice();
 
-Expected a semicolon
+'const' declarations must be initialized
+[00:22:05.778] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
 
 Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:22:02.754] Browser ERROR   ./components/square.tsx:8:3
+[00:22:19.769] Browser ERROR   ./app/page.tsx:25:50
 Parsing ecmascript source code failed
-   6 |         console.log('clicked!')
-   7 |     }
->  8 |   return (
-     |   ^^^^^^^^
->  9 |     <>
-     | ^^^^^^
-> 10 |       <button className="square" onClick={handleClick}>{value}</button>
-     | ^^^^^^
-> 11 |     </>
-     | ^^^^^^
-> 12 |   );
-     | ^^^^^
-  13 | }
-  14 |
+  23 |     <>
+  24 |       <div className="board-row">
+> 25 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  26 |         <Square value={squares[1]} />
+  27 |         <Square value={squares[2]} />
+  28 |       </div>
 
-Return statement is not allowed here
+Expected '</', got '('
+[00:22:19.769] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
 
 Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:22:14.182] Server  LOG      ✓ Compiled in 15ms
-[00:22:14.365] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.370] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.371] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.372] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.374] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.375] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.377] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.379] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.383] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.385] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.388] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.389] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.392] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.394] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.398] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.400] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.403] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:14.404] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:14.756] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.645] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.646] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.648] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.649] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.650] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.652] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.655] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.655] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.657] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.657] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.659] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.660] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.663] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.664] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.668] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.669] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:24.671] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:22:24.674] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:27.537] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:22:57.708] Server  LOG     clicked!
-[00:22:57.709] Server  LOG     clicked!
-[00:22:57.709] Server  LOG     clicked!
-[00:22:57.710] Server  LOG     clicked!
-[00:22:57.710] Server  LOG     clicked!
-[00:22:57.711] Server  LOG     clicked!
-[00:22:57.711] Server  LOG     clicked!
-[00:22:57.711] Server  LOG     clicked!
-[00:22:57.712] Server  LOG     clicked!
-[00:23:07.751] Browser ERROR   ./components/square.tsx:10:61
+[00:23:30.776] Browser ERROR   ./app/page.tsx:26:50
 Parsing ecmascript source code failed
-   8 |   return (
-   9 |     <>
-> 10 |       <button className="square" onClick={()=>handleClick()</>}>
-     |                                                             ^^^^
-  11 |         {value}
-  12 |       </button>
-  13 |     </>
+  24 |     <>
+  25 |       <div className="board-row">
+> 26 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  27 |         <Square value={squares[1]} />
+  28 |         <Square value={squares[2]} />
+  29 |       </div>
 
-Unterminated regexp literal
+Expected '</', got '('
+[00:23:30.776] Browser ERROR   ./components/square.tsx:7:9
+Parsing ecmascript source code failed
+   5 | export default function Square(value, onSquareClick) {
+   6 |   const [value, setValue] = useState();
+>  7 |   const [squares, setSquares];
+     |         ^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |   function handleClick(i) {
+  10 |     const nextSquares = squares.slice();
+
+'const' declarations must be initialized
 
 Import trace:
   Server Component:
     ./components/square.tsx
     ./app/page.tsx
-[00:23:26.515] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.516] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.519] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.520] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.523] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.524] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.528] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.529] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.537] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.539] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.542] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.543] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.545] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.549] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.551] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.551] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:26.553] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:26.554] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:27.757] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.580] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.582] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.583] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.584] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.585] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.585] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.587] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.589] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.590] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.591] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.593] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.596] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.598] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.599] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.601] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.603] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:31.606] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:23:31.609] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:23:32.018] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:24:56.811] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.813] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.813] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.814] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.814] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.815] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.815] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.816] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.817] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.818] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.818] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.819] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.819] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.819] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.820] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.820] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:56.820] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\.next\dev\server\chunks\ssr\[root-of-the-server]__432d602d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:24:56.820] Server  ERROR    ⨯ ReferenceError: value is not defined
-[00:24:59.183] Browser ERROR   uncaughtError: ReferenceError: value is not defined
-[00:25:38.386] Server  LOG      ✓ Compiled in 4ms
-[00:25:38.489] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.491] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.499] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.501] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.505] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.507] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.512] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.516] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.520] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.523] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.527] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.529] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.533] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.535] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.540] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.543] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:38.547] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:38.548] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:40.743] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.563] Server  LOG      ✓ Compiled in 3ms
-[00:25:51.700] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.701] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.703] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.704] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.705] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.706] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.707] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.708] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.710] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.710] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.716] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.719] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.721] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.723] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.726] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.728] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:51.733] Server  ERROR   C:\Users\miche\Documents\Tic-Tac-Toe\tic-tac-toe\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:25:51.737] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:25:53.742] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button className="square" onClick={function handleClick} children=...>
-                                     ^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[00:26:35.440] Server  LOG      ✓ Compiled in 6ms
-[00:26:54.649] Browser LOG     clicked!
-[00:26:55.374] Browser LOG     clicked!
-[00:26:55.831] Browser LOG     clicked!
-[00:27:00.080] Browser LOG     clicked!
-[00:27:00.857] Browser LOG     clicked!
-[00:27:03.885] Browser LOG     clicked!
-[00:27:04.711] Browser LOG     clicked!
-[00:27:05.360] Browser LOG     clicked!
-[00:27:05.541] Browser LOG     clicked!
-[00:27:05.707] Browser LOG     clicked!
-[00:27:05.847] Browser LOG     clicked!
+[00:23:55.721] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.724] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.729] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.730] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.733] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.736] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.739] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.741] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.745] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.748] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.751] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.753] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:55.765] Server  LOG      ✓ Compiled in 24ms
+[00:23:56.772] Browser ERROR   ./app/page.tsx:26:50
+Parsing ecmascript source code failed
+  24 |     <>
+  25 |       <div className="board-row">
+> 26 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  27 |         <Square value={squares[1]} />
+  28 |         <Square value={squares[2]} />
+  29 |       </div>
+
+Expected '</', got '('
+[00:23:56.772] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:22.801] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.802] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.806] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.808] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.810] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.811] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.813] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.814] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.816] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.817] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.819] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:22.820] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:23.774] Browser ERROR   ./app/page.tsx:26:50
+Parsing ecmascript source code failed
+  24 |     <>
+  25 |       <div className="board-row">
+> 26 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  27 |         <Square value={squares[1]} />
+  28 |         <Square value={squares[2]} />
+  29 |       </div>
+
+Expected '</', got '('
+[00:24:23.774] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:59.089] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.092] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.093] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.095] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.099] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.103] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.107] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.109] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.113] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.114] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.118] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.123] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:24:59.771] Browser ERROR   ./app/page.tsx:26:50
+Parsing ecmascript source code failed
+  24 |     <>
+  25 |       <div className="board-row">
+> 26 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  27 |         <Square value={squares[1]} />
+  28 |         <Square value={squares[2]} />
+  29 |       </div>
+
+Expected '</', got '('
+[00:24:59.771] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:25:05.626] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.627] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.631] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.633] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.639] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.642] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.646] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.648] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.649] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.650] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.655] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:05.657] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:06.771] Browser ERROR   ./app/page.tsx:26:50
+Parsing ecmascript source code failed
+  24 |     <>
+  25 |       <div className="board-row">
+> 26 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  27 |         <Square value={squares[1]} />
+  28 |         <Square value={squares[2]} />
+  29 |       </div>
+
+Expected '</', got '('
+[00:25:06.771] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:25:16.017] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.018] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.020] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.022] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.024] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.025] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.026] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.028] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.030] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.031] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.034] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.035] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:25:16.772] Browser ERROR   ./app/page.tsx:28:50
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <div className="board-row">
+> 28 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  29 |         <Square value={squares[1]} />
+  30 |         <Square value={squares[2]} />
+  31 |       </div>
+
+Expected '</', got '('
+[00:25:16.772] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:25:18.771] Browser ERROR   ./app/page.tsx:28:50
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <div className="board-row">
+> 28 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  29 |         <Square value={squares[1]} />
+  30 |         <Square value={squares[2]} />
+  31 |       </div>
+
+Expected '</', got '('
+[00:25:18.771] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:25:18.771] Browser ERROR   ./app/page.tsx:28:50
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <div className="board-row">
+> 28 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  29 |         <Square value={squares[1]} />
+  30 |         <Square value={squares[2]} />
+  31 |       </div>
+
+Expected '</', got '('
+[00:25:18.771] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:25:18.771] Browser ERROR   ./app/page.tsx:28:50
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <div className="board-row">
+> 28 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  29 |         <Square value={squares[1]} />
+  30 |         <Square value={squares[2]} />
+  31 |       </div>
+
+Expected '</', got '('
+[00:25:18.771] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:11.138] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.139] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.140] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.141] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.143] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.144] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.145] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.145] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.147] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.147] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.148] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.148] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:11.770] Browser ERROR   ./app/page.tsx:33:50
+Parsing ecmascript source code failed
+  31 |     <>
+  32 |       <div className="board-row">
+> 33 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  34 |         <Square value={squares[1]} />
+  35 |         <Square value={squares[2]} />
+  36 |       </div>
+
+Expected '</', got '('
+[00:26:11.770] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:55.108] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.111] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.113] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.114] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.116] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.119] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.120] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.121] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.122] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.123] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.124] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.125] Server  ERROR    ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:55.772] Browser ERROR   ./app/page.tsx:35:50
+Parsing ecmascript source code failed
+  33 |     <>
+  34 |       <div className="board-row">
+> 35 |         <Square value={squares[0]} onSquareClick{()=> handleClick(0)} />
+     |                                                  ^
+  36 |         <Square value={squares[1]} />
+  37 |         <Square value={squares[2]} />
+  38 |       </div>
+
+Expected '</', got '('
+[00:26:55.772] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/square'
+> 1 | import { useState } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |
+    | ^
+> 3 | function Square({value, onSquareClick}) {
+    | ^^^^^^^
+  4 |   return (
+  5 |     <>
+  6 |       <button className="square" onClick={onSquareClick}>
+
+Import map: aliased to relative './components/square' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.781] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:26.041] Server  ERROR    ⨯ ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:27:26.149] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:26.755] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:26.755] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:28.253] Browser ERROR   uncaughtError: Error: ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:27:28.635] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:28.819] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 |
+  3 | function Square({ value, onSquareClick }) {
+  4 |   return (
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:47.176] Server  LOG      ✓ Compiled in 44ms
